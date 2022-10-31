@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Wallet Simulator | Juan Burgueño</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Google Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<!--Sweet Alert 2 Install-->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!--Styles CSS-->
+	<link rel="stylesheet" href="./scss/style.css">
+</head>
+	<body class="text-center">
+		<div class="side-navbar d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+			<ul class="nav flex-column text-">
+				<p id="user" class="ml-2 h3 pt-4 text-dark"></p>
+				<div class="total mt-5 col-md-12 text-left lime">Tu dinero es</div>
+				<div id="wallet-sidebar" class="text-left yellow p-0 mt-2" class="text-center"></div>
+			</ul>
+		</div>
+		<div class="my-container ">
+			<a class="btn" id="menu-btn"></a>
+		</div>
+		<section>
+				<div class="container">
+				<div class="row justify-content-center">
+					<h1 class="text-center pt-4 ">Wallet Simulator</h1>
+				</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-8 d-flex justify-content-center">
+								<div class=" w-80 p-md-5 p-4">
+									<h3 class="mb-5 p-2 text-center display-5">Deposita tu dinero, extraelo, o simplemente cambialo por tus cryptos favoritas.</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+									<div class="container">
+									<div class="total mb-2 col-md-12 text-center">Hoy tengo en la wallet</div>
+									<div id="wallet" class="text-center"></div>
+								</div>
+									<div class="container w-100 p-5 rounded border-warning">
+									<div class="container-fluid">
+									<div class ="text-left text-l yellow "id="validate"></div>
+										<input id="amountIn" type="number" class="col-md-5 text-center"  placeholder="Ingrese monto"></input>
+										<button id="amountInBtn"class="col-md-6 mb-1 text-center btn btnIn btn-light"> Ingresar dinero</button>
+									</div>
+								<div class="container-fluid">
+									<input id="amountOut" type="number" class="col-md-5 text-center" placeholder="Ingrese monto a retirar"></input>
+									<button id="amountOutBtn" class="col-md-6 mb-1 text-center btn btnOut btn-light"> Extraer dinero</button>
+								</div>
+							<div class="container-fluid">
+								<input id="exchange" type="number" class="col-md-5 text-center"label="Ingrese el dinero a cambiar" placeholder="Ingrese monto en pesos"></input>
+								<button id="btnExchange" class="col-md-6 mb-1 text-center btn btnOut btn-light" onclick="cryptoTrade()">Comprar crypto</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="col-md-4 d-flex justify-content-center">
+				<div class="bglime w-100 p-lg-5 p-4">
+					<h3 class="mb-4 mt-md-4">CryptoCoins Market</h3>
+						<p id="values" class = "cripto-values"></p>
+						<p id="currenciesStatus" class = "status"></p>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</section>
+	<!--Sweet Alert 2-->
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<!--JavaScript File-->
+	<script src="main.js"></script>	
+</body>
+</html>
+
